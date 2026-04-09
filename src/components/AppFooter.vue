@@ -3,11 +3,13 @@
     <div class="shell footer__inner">
       <div>
         <div class="eyebrow">Contact</div>
-        <h3>Let’s build something calm and considered.</h3>
-        <p class="lede">
-          Available for collaborations, product work, and creative campaigns. Reach out and we’ll
-          shape the next idea together.
-        </p>
+        <h3>Feel free to reach out.</h3>
+        <div class="contact-line">
+          <a class="contact-link" href="mailto:storm.harris.studdart@gmail.com">
+            📧 storm.harris.studdart@gmail.com
+          </a>
+          <a class="contact-link" href="tel:0226166313">📞 022 616 6313</a>
+        </div>
       </div>
       <div class="actions">
         <a class="btn secondary" href="mailto:you@example.com">Email me</a>
@@ -15,14 +17,12 @@
           <a class="text-link" href="https://www.linkedin.com" target="_blank" rel="noreferrer"
             >LinkedIn</a
           >
-          <a class="text-link" href="https://github.com" target="_blank" rel="noreferrer"
-            >GitHub</a
-          >
+          <a class="text-link" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
     </div>
     <div class="shell meta">
-      <span>© {{ new Date().getFullYear() }} Storm Harris-Studdart</span>
+      <span>© {{ new Date().getFullYear() }} Storm Studdart</span>
       <span>Portfolio 2026</span>
     </div>
   </footer>
@@ -50,17 +50,31 @@
   margin: 10px 0;
 }
 
-.footer .lede {
-  margin: 0;
-  max-width: 520px;
-  color: var(--muted);
-}
-
 .actions {
   display: flex;
   align-items: center;
   gap: 14px;
   flex-wrap: wrap;
+}
+
+.contact-line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.contact-link {
+  color: var(--ink);
+  font-weight: 500;
+  transition: color 180ms var(--ease);
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  color: var(--surface-dark);
+  outline: none;
 }
 
 .links {
@@ -81,6 +95,10 @@
   .footer__inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .contact-line {
+    width: 100%;
   }
 
   .meta {

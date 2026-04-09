@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const introVideoId = 'Vmieko8ZaRI'
+const introVideoId = 'unxiejUWMH8'
 const introThumbnail = `https://i.ytimg.com/vi/${introVideoId}/hqdefault.jpg`
 const introEmbedUrl = `https://www.youtube.com/embed/${introVideoId}?autoplay=1&modestbranding=1&playsinline=1&rel=0`
 

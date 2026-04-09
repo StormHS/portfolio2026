@@ -7,7 +7,7 @@ const tabs = [
     label: 'Technical Experience',
     groups: [
       {
-        heading: 'Fullstack Developer Internship · PixelWorld (2024-2025)',
+        heading: 'Fullstack Developer Internship · PixelWorld (Aug 2024 - Aug 2025)',
         items: [
           'Developed responsive national and international web campaigns using Vue 3, Nuxt, Tailwind, and SCSS.',
           'Built reusable Vue components and implemented pixel-accurate designs from Figma.',
@@ -16,7 +16,7 @@ const tabs = [
         ],
       },
       {
-        heading: 'Co-Founder · ParrotPad Application (2025-Current)',
+        heading: 'Product and Operations Management · ParrotPad App (Apr 2025 - Current)',
         items: [
           'Built and maintained the company website.',
           'Developed frontend application features and coordinated the product roadmap.',
@@ -49,7 +49,7 @@ const tabs = [
     label: 'Leadership',
     groups: [
       {
-        heading: 'National Manager of Support Services · Rainbow Youth (2021-2023)',
+        heading: 'National Manager of Support Services · Rainbow Youth (Feb 2021 - Mar 2023)',
         items: [
           'Directed national service delivery across five regions.',
           'Acted as an executive liaison between frontline services, government stakeholders, and executive leadership.',
@@ -57,7 +57,8 @@ const tabs = [
         ],
       },
       {
-        heading: 'Community Participation & Covid-19 Response Lead · Northable (2019-2021)',
+        heading:
+          'Community Participation & Covid-19 Response Lead · Northable (Nov 2018 - Feb 2021)',
         items: [
           'Developed online services and digital resources during lockdowns.',
           'Built client databases and advertising strategies to launch a youth mentoring service.',
@@ -114,11 +115,11 @@ const setActiveTab = (tabId) => {
       <div class="skills-experience__header">
         <div class="eyebrow">About Me</div>
         <p class="lede">
-          Tena koe, I am a junior programmer with comprehensive training in current development
-          tools and 8 years experience in the not-for-profit sector including 3 years managing
-          remote teams. I have completed training in JS, Typescript, React, HTML, CSS, SQL, Git and
-          more. I'm a motivated, detailed oriented and self-directed person with extensive
-          experience working in diversity, equity and inclusion (DEI).
+          Tena koe, I am a junior Full Stack Developer with comprehensive training in current
+          development tools and 8 years experience in the not-for-profit sector including 3 years
+          managing remote teams. I'm a curious, detailed oriented and self-directed person and after
+          finishing a 1 year internship and starting my own company I am looking for an exciting new
+          opportunity as a dev.
         </p>
       </div>
 
@@ -169,13 +170,14 @@ const setActiveTab = (tabId) => {
 }
 
 .skills-experience__inner {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(16px, 3vw, 24px);
+  width: 100%;
+}
+
+.skills-experience__inner > * + * {
+  margin-top: clamp(16px, 3vw, 24px);
 }
 
 .skills-experience__header {
-  max-width: 760px;
   width: 100%;
 }
 
@@ -183,6 +185,7 @@ const setActiveTab = (tabId) => {
   margin: 10px 0 0;
   color: var(--muted);
   font-size: clamp(15px, 2vw, 17px);
+  max-width: 980px;
 }
 
 .tabs {
@@ -308,8 +311,8 @@ const setActiveTab = (tabId) => {
 }
 
 @media (max-width: 640px) {
-  .skills-experience__inner {
-    gap: 14px;
+  .skills-experience__inner > * + * {
+    margin-top: 14px;
   }
 
   .lede {

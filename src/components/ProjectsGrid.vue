@@ -17,11 +17,11 @@ const playVideo = (id) => {
   <section id="projects" class="section projects">
     <div class="shell">
       <div class="header">
-        <div class="eyebrow">Selected work</div>
-        <h2>Campaigns, games, and product flows crafted with care.</h2>
+        <div class="eyebrow">Projects</div>
+        <h2>My Favourite Projects and Campaigns.</h2>
         <p class="lede">
-          A mix of playful experiential builds and focused product tools—each balancing clarity,
-          accessibility, and a calm interaction feel.
+          A mix of some of the projects and campaigns I've worked on. Each with a short demo video
+          or link.
         </p>
       </div>
 
@@ -115,7 +115,10 @@ const playVideo = (id) => {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 220ms var(--ease), box-shadow 220ms var(--ease), border-color 220ms var(--ease);
+  transition:
+    transform 220ms var(--ease),
+    box-shadow 220ms var(--ease),
+    border-color 220ms var(--ease);
 }
 
 .card:hover {
@@ -201,15 +204,16 @@ const playVideo = (id) => {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 260ms var(--ease), filter 260ms var(--ease);
+  transition:
+    transform 260ms var(--ease),
+    filter 260ms var(--ease);
 }
 
 .media__link::after {
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(15, 23, 42, 0.04) 0%, rgba(15, 23, 42, 0.32) 100%);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.04) 0%, rgba(15, 23, 42, 0.32) 100%);
 }
 
 .media__link:hover .media__image,

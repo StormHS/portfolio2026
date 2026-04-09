@@ -27,6 +27,7 @@ import AppFooter from './components/AppFooter.vue'
   --ink: #444;
   --surface-dark: #415449;
   --accent: #415449;
+  --accent-glow: color-mix(in srgb, var(--accent) 22%, transparent);
   --lines: #e5dfd4;
   --muted: #5b6475;
   --shadow-soft: 0 12px 40px rgba(15, 23, 42, 0.08);
@@ -64,8 +65,9 @@ button {
 .page {
   min-height: 100vh;
   background:
-    radial-gradient(circle at 20% 20%, rgba(212, 73, 47, 0.04), transparent 28%),
-    radial-gradient(circle at 80% 10%, rgba(20, 122, 108, 0.04), transparent 32%), var(--paper);
+    radial-gradient(circle at 20% 20%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 28%),
+    radial-gradient(circle at 80% 10%, color-mix(in srgb, var(--surface-dark) 10%, transparent), transparent 32%),
+    var(--paper);
   color: var(--ink);
 }
 
@@ -85,6 +87,7 @@ main {
 .section {
   max-width: 1180px;
   margin: 0 auto;
+  scroll-margin-top: 96px;
 }
 
 .eyebrow {
@@ -128,7 +131,7 @@ main {
   transform: translateY(-2px);
   border-color: var(--accent);
   color: var(--accent);
-  box-shadow: 0 10px 30px rgba(212, 73, 47, 0.12);
+  box-shadow: 0 10px 30px var(--accent-glow);
   outline: none;
 }
 
@@ -143,11 +146,12 @@ main {
 }
 
 .btn.secondary:hover,
-.btn.secondary:focus-visible {
+.btn.secondary:focus-visible,
+.btn.secondary:active {
   background: var(--accent);
   border-color: var(--accent);
   color: var(--paper);
-  box-shadow: 0 10px 30px rgba(212, 73, 47, 0.2);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--accent) 28%, transparent);
 }
 
 .text-link {

@@ -16,7 +16,7 @@ import stormProfileImage from '../assets/stormprofileimage.JPG'
 
       <div class="visual">
         <div class="portrait-frame">
-          <img class="portrait-image" :src="stormProfileImage" alt="Storm Harris-Studdart portrait" />
+          <img class="portrait-image" :src="stormProfileImage" alt="Storm Studdart portrait" />
         </div>
       </div>
     </div>
