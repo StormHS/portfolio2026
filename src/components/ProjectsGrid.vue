@@ -18,7 +18,7 @@ const playVideo = (id) => {
     <div class="shell">
       <div class="header">
         <div class="eyebrow">Projects</div>
-        <h2>My Favourite Projects and Campaigns.</h2>
+        <h2>Campaigns and Projects.</h2>
         <p class="lede">
           A mix of some of the projects and campaigns I've worked on. Each with a short demo video
           or link.
@@ -72,7 +72,6 @@ const playVideo = (id) => {
           <div class="card__body">
             <div class="card__title-row">
               <h3>{{ project.title }}</h3>
-              <span class="pill">Vue / Nuxt</span>
             </div>
             <p class="description">{{ project.description }}</p>
           </div>
@@ -268,9 +267,7 @@ const playVideo = (id) => {
 
 .card__title-row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 12px;
 }
 
 .card h3 {
@@ -279,26 +276,12 @@ const playVideo = (id) => {
   letter-spacing: 0.2px;
 }
 
-.pill {
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  padding: 5px 9px;
-  border-radius: 999px;
-  border: 1px solid var(--lines);
-  color: var(--muted);
-}
-
 .description {
   margin: 0;
   color: var(--muted);
 }
 
 @media (max-width: 540px) {
-  .card__title-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .media__badge {
     left: 12px;
     right: 12px;

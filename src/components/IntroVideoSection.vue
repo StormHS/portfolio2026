@@ -13,11 +13,11 @@ const playIntro = () => {
 </script>
 
 <template>
-  <section id="intro-video" class="section intro-video">
+  <section id="intro-video" class="intro-video">
     <div class="shell intro-video__inner">
       <div class="intro-video__header">
         <div class="eyebrow">Intro Video</div>
-        <h2>A quick introduction before the deeper project work.</h2>
+        <h2>A quick introduction.</h2>
       </div>
 
       <div class="intro-video__stage">
@@ -55,12 +55,19 @@ const playIntro = () => {
 <style scoped>
 .intro-video {
   padding-top: clamp(8px, 2vw, 18px);
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  scroll-margin-top: 96px;
 }
 
 .intro-video__inner {
   display: flex;
   flex-direction: column;
   gap: clamp(22px, 4vw, 32px);
+  max-width: 980px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .intro-video__header {
@@ -87,7 +94,7 @@ const playIntro = () => {
 }
 
 .intro-video__frame {
-  width: min(100%, 920px);
+  width: min(100%, 924px);
   aspect-ratio: 16 / 9;
   position: relative;
   overflow: hidden;

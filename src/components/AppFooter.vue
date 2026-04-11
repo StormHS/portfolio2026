@@ -1,3 +1,7 @@
+<script setup>
+import cvPdf from '../assets/Developer - Storm Cv 2026 (2).pdf'
+</script>
+
 <template>
   <footer id="contact" class="footer">
     <div class="shell footer__inner">
@@ -12,7 +16,9 @@
         </div>
       </div>
       <div class="actions">
-        <a class="btn secondary" href="mailto:you@example.com">Email me</a>
+        <a class="btn secondary" :href="cvPdf" download="Storm-Studdart-CV-2026.pdf">
+          Download CV
+        </a>
         <div class="links">
           <a class="text-link" href="https://www.linkedin.com" target="_blank" rel="noreferrer"
             >LinkedIn</a

@@ -4,28 +4,28 @@ const rawProjects = [
     title: 'ParrotPad',
     siteUrl: 'https://www.parrotpad.app/',
     description:
-      'Current co-founded product focused on practical communication support. I built and maintain the website and contribute to frontend product development and roadmap delivery.',
+      'Current project. Co-founded this language rehearsal tool focused on building real-life speaking confidence. I designed and built the company website in Vue 3, shape the product direction, and work across UX, feature planning, and product delivery.',
   },
   {
     id: 1,
     title: 'Paw Print Petition',
     video: 'https://www.youtube.com/embed/KgxpTjTQ06A?si=CMtR8b8JrzKwCOax',
     description:
-      'Vue 3 + Nuxt 3 Firebase web app where users sign with their pet’s paw to ban public fireworks. Surpassed 100,000 votes to send to parliament.',
+      'Vue 3 / Nuxt 3 / Firebase petition platform where users "sign" with their pet’s paw to ban public fireworks. I contributed heavily to frontend development as well as working on the API integration and testing Firebase functions. Reached 100,000+ signatures submitted to parliament.',
   },
   {
     id: 2,
     title: 'Fruju Frenzy',
     video: 'https://www.youtube.com/embed/v4j6kG1ys9c?si=8K1lO75HPuaDh8ZX',
     description:
-      'Interactive Vue 3 game using Matter.js physics; players tap falling fruit for points with juicy animations and dynamic scoring.',
+      'Vue 3 / Nuxt 3 / Matter.js interactive browser game where users tap falling fruit for points. I built gameplay features, physics interactions, and UI using Matter.js, focusing on smooth animation and responsive feedback.',
   },
   {
     id: 3,
     title: 'Cadbury Unwrap the Thrill',
     video: 'https://www.youtube.com/embed/BcD08RJL3XA?si=Eh_e1j4b2rsGcJVa',
     description:
-      'Promotional Vue 3 PWA where users enter a unique code from packaging to reveal if they win a prize.',
+      'Vue 3 / Nuxt 3 / Firebase promotional campaign where users enter product codes for a chance to win. I built the frontend and developed reusable components, including the entry flow and form validation.',
   },
 ]
 
